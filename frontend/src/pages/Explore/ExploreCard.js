@@ -9,7 +9,8 @@ const Overlay = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0;
+  top: 100px;
+  margin-top: 100px;
   bottom: 0;
   opacity: 0;
   display: flex;

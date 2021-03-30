@@ -43,20 +43,21 @@ export default {
     secondary: {
       light: '#ff4081',
       main: '#f50057',
-      dark: '#c51162',
+      dark: '#c80e5e',
       contrastText: '#fff',
     },
 
     text: {
       primary: 'rgba(0, 0, 0, 0.87)',
-      secondary: 'rgba(0, 0, 0, 0.54)',
+      secondary: 'rgba(0,0,0,0.54)',
+      header: 'rgba(255,255,255,0.54)',
       disabled: 'rgba(0, 0, 0, 0.38)',
       hint: 'rgba(0, 0, 0, 0.38)',
     },
 
     border: {
       light: '#f5f5f5',
-      main: '#e0e0e0',
+      main: '#c7c7c7',
       dark: '#bdbdbd',
     },
 

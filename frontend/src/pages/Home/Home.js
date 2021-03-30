@@ -27,7 +27,7 @@ const Empty = styled.div`
   border: 1px solid ${(p) => p.theme.colors.border.main};
   border-radius: ${(p) => p.theme.radius.sm};
   margin-top: ${(p) => p.theme.spacing.lg};
-  background-color: ${(p) => p.theme.colors.white};
+  background-color: ${(p) => p.theme.colors.secondary.light};
 `;
 
 const StyledA = styled(A)`

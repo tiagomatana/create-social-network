@@ -30,6 +30,7 @@ const Link = styled(NavLink)`
 
 const List = styled.ul`
   list-style-type: none;
+  border-radius: 10px;
   padding: 0;
   line-height: 40px;
   font-size: ${(p) => p.theme.font.size.xs};

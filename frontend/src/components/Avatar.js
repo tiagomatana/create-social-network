@@ -8,6 +8,7 @@ const Root = styled.div`
   width: ${(p) => (p.size ? `${p.size}px` : '30px')};
   height: ${(p) => (p.size ? `${p.size}px` : '30px')};
   border-radius: 50%;
+  background: linear-gradient(45deg, red, blue) border-box; /*3*/
   overflow: hidden;
   flex-shrink: 0;
 `;

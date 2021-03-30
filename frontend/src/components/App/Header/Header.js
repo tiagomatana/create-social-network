@@ -23,7 +23,8 @@ import * as Routes from 'routes';
 const Root = styled(Container)`
   position: sticky;
   top: 0;
-  background-color: ${(p) => p.theme.colors.white};
+  background-image: linear-gradient(to left, #c80e5e, #011550);
+  //background-color: ${(p) => p.theme.colors.primary.dark};
   z-index: ${(p) => p.theme.zIndex.md};
   height: ${HEADER_HEIGHT}px;
   border-bottom: 1px solid ${(p) => p.theme.colors.border.main};
@@ -62,9 +63,15 @@ const Hamburger = styled.div`
   }
 `;
 
+const LogoNew = styled.img`
+  width: 23vh;
+
+  object-fit: cover;
+`;
+
 const Logo = styled(A)`
   display: none;
-  color: ${(p) => p.theme.colors.primary.main};
+  color: ${(p) => p.theme.colors.white};
   font-weight: ${(p) => p.theme.font.weight.bold};
   font-size: ${(p) => p.theme.font.size.sm};
 
@@ -164,8 +171,10 @@ const Header = ({ location, toggleSideBar }) => {
           <Hamburger onClick={toggleSideBar}>
             <MenuIcon />
           </Hamburger>
-
-          <Logo to={Routes.HOME}>{SiteInfo.name}</Logo>
+          <LogoNew
+            src={'https://res.cloudinary.com/tiagomatana/image/upload/v1616958814/app/logo-sem-fundo_y9a7l4.png'}
+          ></LogoNew>
+          {/*<Logo to={Routes.HOME}>{SiteInfo.name}</Logo>*/}
 
           <Spacing left="sm" right="md">
             <Search location={location} placeholder="Search" />

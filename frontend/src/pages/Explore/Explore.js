@@ -22,7 +22,7 @@ import { useStore } from 'store';
 import * as Routes from 'routes';
 
 const Root = styled(Container)`
-  margin-top: ${(p) => p.theme.spacing.lg};
+  margin-top: ${(p) => p.theme.spacing.lg} !important;
   margin-bottom: ${(p) => p.theme.spacing.sm};
 
   @media (min-width: ${(p) => p.theme.screen.lg}) {
@@ -32,6 +32,7 @@ const Root = styled(Container)`
 `;
 
 const PostsContainer = styled.div`
+  margin-top: ${(p) => p.theme.spacing.lg} !important;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 3fr));
   grid-auto-rows: auto;

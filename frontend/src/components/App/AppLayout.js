@@ -31,6 +31,7 @@ const Root = styled.div`
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  margin-top: 41px;
   width: 100%;
   position: relative;
 
